@@ -19,16 +19,6 @@ function titleCased() {
         title[i] = word[0].toUpperCase() + word.slice(1);
       });
       
-      // for (let word of tutorial) { 
-      //   word = word[0].toUpperCase() + word.slice(1);
-      // }
-      
       return title.join(' ');
     });
 }
-
-// numbers.forEach(myFunction)
-
-// function myFunction(item, index, arr) {
-//   arr[index] = item * 10;
-// }
