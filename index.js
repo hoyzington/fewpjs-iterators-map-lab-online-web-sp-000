@@ -13,16 +13,22 @@ const tutorials = [
 
 function titleCased() {
   return tutorials.map((tutorial) => {
-      tutorial = tutorial.split(' ');
+      title = title.split(' ');
       
-      tutorial.forEach()
+      title.forEach(function (word, i, title) {
+        title[i] = word[0].toUpperCase() + word.slice(1);
+      });
       
       // for (let word of tutorial) { 
       //   word = word[0].toUpperCase() + word.slice(1);
       // }
       
-      return tutorial.join(' ');
+      return title.join(' ');
     });
 }
 
+numbers.forEach(myFunction)
 
+function myFunction(item, index, arr) {
+  arr[index] = item * 10;
+}
