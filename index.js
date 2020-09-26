@@ -12,7 +12,7 @@ const tutorials = [
 ];
 
 function titleCased() {
-  return tutorials.map((tutorial) => {
+  return tutorials.map((title) => {
       title = title.split(' ');
       
       title.forEach(function (word, i, title) {
@@ -27,8 +27,8 @@ function titleCased() {
     });
 }
 
-numbers.forEach(myFunction)
+// numbers.forEach(myFunction)
 
-function myFunction(item, index, arr) {
-  arr[index] = item * 10;
-}
+// function myFunction(item, index, arr) {
+//   arr[index] = item * 10;
+// }
