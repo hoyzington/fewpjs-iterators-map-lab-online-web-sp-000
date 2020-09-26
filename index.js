@@ -15,11 +15,8 @@ const titleCased = () => {
   return tutorials
     .map((tute) => { return tute.split(' ')                 // ['what', 'is', 'JSONP?']
       .map((word) => { return word[0].toUpperCase(); })     // ['What', 'Is', 'JSONP?']
-      .reduce((memo, i) => { return memo + i; })             // 
-    
-    
+      .reduce((memo, i) => { return memo + i; });           // 'What Is JSONP?'
     });
-  });
 };
 
 
