@@ -12,9 +12,10 @@ const tutorials = [
 ];
 
 const titleCased = () => {
-  return tutorials
-    .map((tute) => { const tuteArray = tute.split(' ')              // ['what', 'is', 'JSONP?']
-      .forEach(word => word[0] = word[0].toUpperCase());            // ['What', 'Is', 'JSONP?']
+  return tutorials.map((tute) => {
+      const tuteArray = tute.split(' ');              // ['what', 'is', 'JSONP?']
+      for (const word in tuteArray) { word[0] = word[0].toUpperCase() }
+      // .forEach(word => word[0] = word[0].toUpperCase());          // ['What', 'Is', 'JSONP?']
       return tuteArray.reduce((memo, i) => { return memo + i; });   // 'What Is JSONP?'
     });
 };
