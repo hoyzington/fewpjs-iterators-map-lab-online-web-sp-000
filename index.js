@@ -13,9 +13,9 @@ const tutorials = [
 
 const titleCased = () => {
   return tutorials
-    .map((tute) => { return tute.split(' ')                 // ['what', 'is', 'JSONP?']
-      .forEach(word => word[0].toUpperCase())               // ['What', 'Is', 'JSONP?']
-      .reduce((memo, i) => { return memo + i; });           // 'What Is JSONP?'
+    .map((tute) => { const tuteArray = tute.split(' ')              // ['what', 'is', 'JSONP?']
+      .forEach(word => word[0].toUpperCase());                      // ['What', 'Is', 'JSONP?']
+      return tuteArray.reduce((memo, i) => { return memo + i; });   // 'What Is JSONP?'
     });
 };
 
