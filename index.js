@@ -16,6 +16,7 @@ const titleCased = () => {
       tutorial = tutorial.split(' ');              // ['what', 'is', 'JSONP?']
       for (let word of tutorial) { 
         word = word.charAt(0).toUpperCase() + word.slice(1);
+        word = word[0].toUpperCase() + word.slice(1);
       }
       return tutorial.join(' ');   // 'What Is JSONP?'
     });
