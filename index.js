@@ -13,11 +13,11 @@ const tutorials = [
 
 const titleCased = () => {
   return tutorials.map((tute) => {
-      const tuteArray = tute.split(' ');              // ['what', 'is', 'JSONP?']
-      for (let word of tuteArray) { 
+      tutorial = tutorial.split(' ');              // ['what', 'is', 'JSONP?']
+      for (let word of tutorial) { 
         word = word[0].toUpperCase() + word.slice(1);
       }
-      return tuteArray.join(' ');   // 'What Is JSONP?'
+      return tutorial.join(' ');   // 'What Is JSONP?'
     });
 };
 
